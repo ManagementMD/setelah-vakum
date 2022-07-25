@@ -126,7 +126,7 @@ moment.tz.setDefault("Asia/Jakarta").locale("id");
 
 module.exports = async(conn, msg, m, setting, store, XeonBotInc) => {
 	try {
-		let { ownerNumber, ownerName, botName, gamewaktu, limitCount, gcwa } = setting
+		let { ownerNumber, ownerName, OwnerKu, botName, gamewaktu, limitCount, gcwa } = setting
 		let { allmenu } = require('./help')
 		const { type, quotedMsg, mentioned, now, fromMe } = msg
 		if (msg.isBaileys) return
@@ -400,8 +400,8 @@ module.exports = async(conn, msg, m, setting, store, XeonBotInc) => {
 		}
 		//{ callButton: { displayText: `Call Owner!`, phoneNumber: `+${ownerNumber}` } },
 		const buttonsDefault = [
-			{ urlButton: { displayText: `CHANNEL ${botName.toUpperCase()}`, url : `https://t.me/telejochannel` } },
-			{ urlButton: { displayText: `OWNER BOT`, url : `https://wa.me/6285756812987?text=Hai+kak+aku+mau+beli+PREMIUM` } },
+			{ urlButton: { displayText: `WEB ${OwnerKu.toUpperCase()}`, url : `https://social-kiro.netlify.app/` } },
+			{ urlButton: { displayText: `OWNER BOT`, url : `https://wa.me/6285756812987?text=.daftarprem` } },
 			{ quickReplyButton: { displayText: `Donasi`, id: `${prefix}donate` } },
 			{ quickReplyButton: { displayText: `Dashboard`, id: `${prefix}dashboard` } },
 			{ quickReplyButton: { displayText: `Daftar Premium`, id: `${prefix}daftarprem` } },
