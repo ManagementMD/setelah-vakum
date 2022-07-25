@@ -1,0 +1,13 @@
+{
+  "wait": "_Tunggu Sebentar Yah Kak, Sedang Aku Proses Nih  >///<",
+  "error": {
+    "Iv": "Berikan Link Yang Sesuai Dengan Command",
+    "api": "*[ ERROR ]*"
+  },
+  "OnlyGrup": "Perintah Ini Hanya Untuk Grup",
+  "OnlyPM": "Perintah ini hanya Untuk Di Private Message",
+  "GrupAdmin": "Perintah ini hanya bisa digunakan oleh Admin Grup",
+  "BotAdmin": "Jadikan Bot Sebagai Admin Untuk Menggunakan Fitur Tersebut",
+  "OnlyOwner": "Perintah Ini Khusus Owner Bot!",
+  "OnlyPrem": "Perintah Ini Khusus Member Premium Kak, Upgrade Fitur Premium ketik !owner dan chat owner untuk upgrade premium"
+}
