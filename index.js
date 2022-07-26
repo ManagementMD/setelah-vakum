@@ -130,11 +130,11 @@ const connectToWhatsApp = async () => {
 		  var pp_user = `https://i.ibb.co/fHjfjhp/7770c211fe27.jpg`
 		}
 		if (data.action == "add") {
-		  var welcomenya = await getBuffer(`https://hardianto.xyz/api/welcome3?nama=${i.split("@")[0]}&descriminator=KIRO-BOT&memcount=${metadata.participants.length}&gcname=${metadata.subject}&pp=${pp_user}&bg=https://i.ibb.co/98m53bv/welcome.jpg`)
+          var welcomenya = await getBuffer (`https://hardianto.xyz/api/welcome3?profile=${pp_user}&name=${i.split("@")[0]}&bg=https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg&namegb=${metadata.subject}`)
 		   var but = [{buttonId: `/`, buttonText: { displayText: "Semoga Betah 🥳" }, type: 1 }]
 				conn.sendMessage(data.id, { caption: `Hallo @${i.split("@")[0]} Selamat Datang Di Grup *${metadata.subject}*\nSilahkan Untuk Memperkenalkan diri anda`, image: welcomenya, buttons: but, footer: `Welcome`, mentions: [i]})
 		} else if (data.action == "remove") {
-		  var leavenya = await getBuffer(`https://hardianto.xyz/api/goodbye3?nama=${i.split("@")[0]}&descriminator=KIRO-BOT&memcount=${metadata.participants.length}&gcname=${metadata.subject}&pp=${pp_user}&bg=https://i.ibb.co/YWv8c1v/out.jpg`)
+		  var leavenya = await getBuffer(`http://hadi-api.herokuapp.com/api/card/goodbye?nama=${i.split("@")[0]}&descriminator=KIRO-BOT&memcount=${metadata.participants.length}&gcname=${metadata.subject}&pp=${pp_user}&bg=https://i.ibb.co/YWv8c1v/out.jpg`)
 		  var but = [{buttonId: `/`, buttonText: { displayText: "Sampai Jumpa 👋" }, type: 1 }]
 				conn.sendMessage(data.id, { caption: `Byeee @${i.split("@")[0]}`, image: leavenya, buttons: but, footer: `Leave`, mentions: [i]})
 		}
